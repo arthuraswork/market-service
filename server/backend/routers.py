@@ -4,10 +4,9 @@ router = APIRouter()
 
 
 @router.get('/v1/list')
-def get_list():
-    ...
+async def get_list():
+    return {'message':'list','value':[]}
 
 @router.get('/v1/info')
-def get_list():
-    ...
-
+async def get_info():
+    return {'message':'info'}
