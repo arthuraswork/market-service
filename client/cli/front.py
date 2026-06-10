@@ -18,6 +18,12 @@ def get_list_from_server(host: str, port: int, token: str, path: str = 'v1/list'
     response.close()
 
 
+def get_object_from_server(host: str, port: int, token: str, value: str, op: str = 'title', path: str = 'v1/info'):
+    response = requests.get(f'http://{host}:{port}/{path}?token={token}&by={op}&value={value}', stream=True)
+    obj = response.json()
+    response.close()
+    return obj
+
 
 
 class UserFrontendCLI(Frontend):
@@ -75,7 +81,16 @@ class UserFrontendCLI(Frontend):
         if not self.list_objects:
             self.list(out=False)
         input_object = questionary.autocomplete(Messages.GET, self.list_objects).ask()
-        print(input_object)
-    
+        result = get_object_from_server(host='localhost',port=self.port, token= self.token, value= input_object)
+        if not result:
+            sys.stdout.write('Неизвестный товар, выберите из списка' + '\n')
+
+        else:
+            sys.stdout.write('Название' + result.get('title') + '\n')
+            sys.stdout.write('Цена:'+ str(result.get('price')) + '\n')
+            sys.stdout.write('Колличество' +str(result.get('count')) + '\n')
+            sys.stdout.write('Категория:' + result.get('category') + '\n')
+            sys.stdout.write('Код' + result.get('code') + '\n')
+
     def count_of(self):
         ...
