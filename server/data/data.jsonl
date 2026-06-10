@@ -1,0 +1,100 @@
+{"title": "Хлеб белый нарезной", "category": "bread", "code": "BRD001", "price": 55, "count": 12}
+{"title": "Хлеб бородинский", "category": "bread", "code": "BRD002", "price": 65, "count": 8}
+{"title": "Батон нарезной", "category": "bread", "code": "BRD003", "price": 45, "count": 15}
+{"title": "Лаваш тонкий", "category": "bread", "code": "BRD004", "price": 35, "count": 20}
+{"title": "Булочка с маком", "category": "bakery", "code": "BRD005", "price": 25, "count": 10}
+{"title": "Молоко 3.2% 1л", "category": "dairy", "code": "DAI006", "price": 89, "count": 14}
+{"title": "Кефир 1л", "category": "dairy", "code": "DAI007", "price": 85, "count": 9}
+{"title": "Сметана 15% 400г", "category": "dairy", "code": "DAI008", "price": 110, "count": 7}
+{"title": "Творог 5% 200г", "category": "dairy", "code": "DAI009", "price": 95, "count": 11}
+{"title": "Масло сливочное 180г", "category": "dairy", "code": "DAI010", "price": 140, "count": 6}
+{"title": "Яйца куриные С1 10шт", "category": "eggs", "code": "EGG011", "price": 120, "count": 18}
+{"title": "Сосиски молочные", "category": "meat", "code": "MEA012", "price": 250, "count": 8}
+{"title": "Колбаса вареная", "category": "meat", "code": "MEA013", "price": 320, "count": 5}
+{"title": "Ветчина куриная", "category": "meat", "code": "MEA014", "price": 290, "count": 6}
+{"title": "Фарш свиной 400г", "category": "meat", "code": "MEA015", "price": 210, "count": 4}
+{"title": "Куриное филе 500г", "category": "meat", "code": "MEA016", "price": 230, "count": 7}
+{"title": "Говядина 500г", "category": "meat", "code": "MEA017", "price": 400, "count": 3}
+{"title": "Пельмени домашние 800г", "category": "frozen", "code": "FRZ018", "price": 280, "count": 10}
+{"title": "Вареники с картошкой", "category": "frozen", "code": "FRZ019", "price": 210, "count": 6}
+{"title": "Мороженое пломбир", "category": "frozen", "code": "FRZ020", "price": 65, "count": 25}
+{"title": "Брокколи замороженная", "category": "frozen", "code": "FRZ021", "price": 170, "count": 9}
+{"title": "Картофель фри", "category": "frozen", "code": "FRZ022", "price": 160, "count": 12}
+{"title": "Макароны спиральки", "category": "groceries", "code": "GRO023", "price": 65, "count": 22}
+{"title": "Рис круглозерный 800г", "category": "groceries", "code": "GRO024", "price": 85, "count": 18}
+{"title": "Гречка ядрица", "category": "groceries", "code": "GRO025", "price": 95, "count": 15}
+{"title": "Овсяные хлопья", "category": "groceries", "code": "GRO026", "price": 70, "count": 20}
+{"title": "Мука пшеничная 1кг", "category": "groceries", "code": "GRO027", "price": 60, "count": 14}
+{"title": "Сахар песок 1кг", "category": "groceries", "code": "GRO028", "price": 75, "count": 16}
+{"title": "Соль поваренная", "category": "groceries", "code": "GRO029", "price": 25, "count": 40}
+{"title": "Масло подсолнечное 1л", "category": "oil", "code": "OIL030", "price": 120, "count": 13}
+{"title": "Томатная паста", "category": "sauces", "code": "SAU031", "price": 55, "count": 17}
+{"title": "Майонез", "category": "sauces", "code": "SAU032", "price": 80, "count": 12}
+{"title": "Кетчуп", "category": "sauces", "code": "SAU033", "price": 75, "count": 14}
+{"title": "Соевый соус", "category": "sauces", "code": "SAU034", "price": 110, "count": 8}
+{"title": "Горошек консервированный", "category": "canned", "code": "CAN035", "price": 70, "count": 24}
+{"title": "Кукуруза консервированная", "category": "canned", "code": "CAN036", "price": 75, "count": 22}
+{"title": "Тушенка говяжья", "category": "canned", "code": "CAN037", "price": 210, "count": 9}
+{"title": "Шпроты", "category": "canned", "code": "CAN038", "price": 180, "count": 6}
+{"title": "Огурцы соленые", "category": "canned", "code": "CAN039", "price": 140, "count": 8}
+{"title": "Яблоки красные", "category": "fruits", "code": "FRU040", "price": 140, "count": 10}
+{"title": "Бананы", "category": "fruits", "code": "FRU041", "price": 120, "count": 15}
+{"title": "Апельсины", "category": "fruits", "code": "FRU042", "price": 160, "count": 9}
+{"title": "Мандарины", "category": "fruits", "code": "FRU043", "price": 180, "count": 7}
+{"title": "Лимон", "category": "fruits", "code": "FRU044", "price": 45, "count": 20}
+{"title": "Картофель", "category": "vegetables", "code": "VEG045", "price": 55, "count": 25}
+{"title": "Морковь", "category": "vegetables", "code": "VEG046", "price": 45, "count": 22}
+{"title": "Лук репчатый", "category": "vegetables", "code": "VEG047", "price": 40, "count": 20}
+{"title": "Капуста белокочанная", "category": "vegetables", "code": "VEG048", "price": 50, "count": 18}
+{"title": "Свекла", "category": "vegetables", "code": "VEG049", "price": 48, "count": 12}
+{"title": "Огурцы свежие", "category": "vegetables", "code": "VEG050", "price": 180, "count": 8}
+{"title": "Помидоры свежие", "category": "vegetables", "code": "VEG051", "price": 200, "count": 8}
+{"title": "Чеснок", "category": "vegetables", "code": "VEG052", "price": 25, "count": 30}
+{"title": "Печенье овсяное", "category": "sweets", "code": "SWE053", "price": 70, "count": 18}
+{"title": "Пряники", "category": "sweets", "code": "SWE054", "price": 65, "count": 14}
+{"title": "Вафли сливочные", "category": "sweets", "code": "SWE055", "price": 55, "count": 20}
+{"title": "Шоколад молочный", "category": "sweets", "code": "SWE056", "price": 110, "count": 12}
+{"title": "Конфеты карамель", "category": "sweets", "code": "SWE057", "price": 80, "count": 15}
+{"title": "Зефир", "category": "sweets", "code": "SWE058", "price": 95, "count": 9}
+{"title": "Сушки ванильные", "category": "sweets", "code": "SWE059", "price": 45, "count": 25}
+{"title": "Сгущенное молоко", "category": "sweets", "code": "SWE060", "price": 120, "count": 11}
+{"title": "Сухарики ржаные", "category": "snacks", "code": "SNK061", "price": 40, "count": 30}
+{"title": "Чипсы", "category": "snacks", "code": "SNK062", "price": 90, "count": 22}
+{"title": "Арахис соленый", "category": "snacks", "code": "SNK063", "price": 110, "count": 15}
+{"title": "Семечки жареные", "category": "snacks", "code": "SNK064", "price": 60, "count": 25}
+{"title": "Попкорн сладкий", "category": "snacks", "code": "SNK065", "price": 85, "count": 12}
+{"title": "Йогурт питьевой", "category": "dairy", "code": "DAI066", "price": 65, "count": 18}
+{"title": "Ряженка 0.9л", "category": "dairy", "code": "DAI067", "price": 88, "count": 9}
+{"title": "Крабовые палочки", "category": "frozen", "code": "FRZ068", "price": 150, "count": 13}
+{"title": "Котлеты куриные", "category": "frozen", "code": "FRZ069", "price": 240, "count": 6}
+{"title": "Лапша быстрого приготовления", "category": "groceries", "code": "GRO070", "price": 35, "count": 40}
+{"title": "Сухари панировочные", "category": "groceries", "code": "GRO071", "price": 45, "count": 18}
+{"title": "Дрожжи сухие", "category": "groceries", "code": "GRO072", "price": 20, "count": 25}
+{"title": "Какао-порошок", "category": "groceries", "code": "GRO073", "price": 85, "count": 12}
+{"title": "Корица молотая", "category": "spices", "code": "SPI074", "price": 35, "count": 20}
+{"title": "Перец черный молотый", "category": "spices", "code": "SPI075", "price": 30, "count": 22}
+{"title": "Лавровый лист", "category": "spices", "code": "SPI076", "price": 15, "count": 35}
+{"title": "Уксус столовый", "category": "sauces", "code": "SAU077", "price": 40, "count": 16}
+{"title": "Горчица", "category": "sauces", "code": "SAU078", "price": 55, "count": 12}
+{"title": "Хрен", "category": "sauces", "code": "SAU079", "price": 60, "count": 10}
+{"title": "Аджика", "category": "sauces", "code": "SAU080", "price": 95, "count": 7}
+{"title": "Сыр сливочный", "category": "dairy", "code": "DAI081", "price": 150, "count": 5}
+{"title": "Сыр моцарелла", "category": "dairy", "code": "DAI082", "price": 250, "count": 5}
+{"title": "Плавленый сыр", "category": "dairy", "code": "DAI083", "price": 95, "count": 10}
+{"title": "Блины с мясом", "category": "frozen", "code": "FRZ084", "price": 210, "count": 5}
+{"title": "Смесь овощная замороженная", "category": "frozen", "code": "FRZ085", "price": 130, "count": 10}
+{"title": "Мармелад", "category": "sweets", "code": "SWE086", "price": 90, "count": 10}
+{"title": "Варенье клубничное", "category": "sweets", "code": "SWE087", "price": 160, "count": 6}
+{"title": "Мед цветочный", "category": "sweets", "code": "SWE088", "price": 350, "count": 4}
+{"title": "Чай черный 25пак", "category": "tea", "code": "TEA089", "price": 85, "count": 16}
+{"title": "Чай зеленый", "category": "tea", "code": "TEA090", "price": 90, "count": 14}
+{"title": "Кофе растворимый", "category": "coffee", "code": "COF091", "price": 350, "count": 8}
+{"title": "Помидоры в соку", "category": "canned", "code": "CAN092", "price": 95, "count": 11}
+{"title": "Скумбрия в масле", "category": "canned", "code": "CAN093", "price": 160, "count": 5}
+{"title": "Груши", "category": "fruits", "code": "FRU094", "price": 170, "count": 5}
+{"title": "Зелень (укроп/петрушка)", "category": "vegetables", "code": "VEG095", "price": 35, "count": 15}
+{"title": "Разрыхлитель теста", "category": "groceries", "code": "GRO096", "price": 15, "count": 30}
+{"title": "Масло оливковое 0.5л", "category": "oil", "code": "OIL097", "price": 450, "count": 5}
+{"title": "Творожный сыр", "category": "dairy", "code": "DAI098", "price": 180, "count": 8}
+{"title": "Простокваша", "category": "dairy", "code": "DAI099", "price": 75, "count": 7}
+{"title": "Спагетти", "category": "groceries", "code": "GRO100", "price": 180, "count": 7}

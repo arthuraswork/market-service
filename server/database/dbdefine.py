@@ -37,7 +37,7 @@ class ObjectStorageRedis(ObjectStorage):
 
     def create_client(self):
         return redis.Redis(self.host, self.port, decode_responses=True)
-    
+                                                                                                                                                    
     def ping(self):
         return self.client.ping()
     
