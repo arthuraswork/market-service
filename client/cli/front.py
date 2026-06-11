@@ -18,12 +18,23 @@ def get_list_from_server(host: str, port: int, token: str, path: str = 'v1/list'
     response.close()
 
 
-def get_object_from_server(host: str, port: int, token: str, value: str, op: str = 'title', path: str = 'v1/info'):
-    response = requests.get(f'http://{host}:{port}/{path}?token={token}&by={op}&value={value}', stream=True)
+def get_object_from_server(host: str, port: int, token: str, value: str, by: str = 'title', path: str = 'v1/info'):
+    response = requests.put(f'http://{host}:{port}/{path}?token={token}&by={by}&value={value}')
     obj = response.json()
     response.close()
     return obj
 
+def incr_minus_to_server(host: str, port: int, token: str, value: str, by: str = 'title', path: str = 'v1/incr_minus'):
+    response = requests.put(f'http://{host}:{port}/{path}?token={token}&by={by}&value={value}')
+    code = str(response.status_code)
+    response.close()
+    return code
+
+def incr_plus_to_server(host: str, port: int, token: str, value: str, by: str = 'title', path: str = 'v1/incr_plus'):
+    response = requests.put(f'http://{host}:{port}/{path}?token={token}&by={by}&value={value}')
+    code = str(response.status_code)
+    response.close()
+    return code
 
 
 class UserFrontendCLI(Frontend):
@@ -41,6 +52,7 @@ class UserFrontendCLI(Frontend):
         self.host = host
         self.port = port
         self.list_objects = []
+        self.set_objets = set()
 
     def exit(self, code = 0):
         return sys.exit(code)
@@ -51,7 +63,11 @@ class UserFrontendCLI(Frontend):
         return option()
 
     def add(self):
-        ...
+        if not self.list_objects:
+            self.list(out=False)
+        input_object = questionary.autocomplete(Messages.ADD, self.list_objects).ask()
+        result = incr_plus_to_server(host='localhost', port=self.port, token=self.token, value=input_object)
+        sys.stdout.write(result)
 
     def gen_table(self, data, out = True):
         table = Texttable()
@@ -68,7 +84,7 @@ class UserFrontendCLI(Frontend):
             return table.draw()     
 
     def list(self, out = True):
-        result = get_list_from_server(host='localhost',port=self.port, token= self.token)
+        result = get_list_from_server(host='localhost',port=self.port, token=self.token)
         table = self.gen_table(result, out)
         if out and table:
             sys.stdout.write(table + '\n')
@@ -81,16 +97,16 @@ class UserFrontendCLI(Frontend):
         if not self.list_objects:
             self.list(out=False)
         input_object = questionary.autocomplete(Messages.GET, self.list_objects).ask()
-        result = get_object_from_server(host='localhost',port=self.port, token= self.token, value= input_object)
+        result = get_object_from_server(host='localhost',port=self.port, token=self.token, value=input_object)
         if not result:
-            sys.stdout.write('Неизвестный товар, выберите из списка' + '\n')
+            sys.stdout.write('Неизвестная ошибка' + '\n')
 
         else:
-            sys.stdout.write('Название' + result.get('title') + '\n')
-            sys.stdout.write('Цена:'+ str(result.get('price')) + '\n')
+            sys.stdout.write('Название: ' + result.get('title') + '\n')
+            sys.stdout.write('Цена: '+ str(result.get('price')) + '\n')
             sys.stdout.write('Колличество' +str(result.get('count')) + '\n')
-            sys.stdout.write('Категория:' + result.get('category') + '\n')
-            sys.stdout.write('Код' + result.get('code') + '\n')
+            sys.stdout.write('Категория: ' + result.get('category') + '\n')
+            sys.stdout.write('Код: ' + result.get('code') + '\n')
 
     def count_of(self):
         ...
