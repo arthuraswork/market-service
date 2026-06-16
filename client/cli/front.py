@@ -19,7 +19,7 @@ def get_list_from_server(host: str, port: int, token: str, path: str = 'v1/list'
 
 
 def get_object_from_server(host: str, port: int, token: str, value: str, by: str = 'title', path: str = 'v1/info'):
-    response = requests.put(f'http://{host}:{port}/{path}?token={token}&by={by}&value={value}')
+    response = requests.get(f'http://{host}:{port}/{path}?token={token}&by={by}&value={value}')
     obj = response.json()
     response.close()
     return obj

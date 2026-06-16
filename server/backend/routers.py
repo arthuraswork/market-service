@@ -22,10 +22,10 @@ async def get_info(by: Literal['title','code'], value: str):
     obj = await db.get_object(by, value)
     return obj
 
-@router.put('/v1/incr_minus')
+@router.patch('/v1/incr_minus')
 async def get_info(by: Literal['title','code'], value: str):
     await db.incr_minus(by, value)
 
-@router.put('/v1/incr_plus')
+@router.patch('/v1/incr_plus')
 async def get_info(by: Literal['title','code'], value: str):
     await db.incr_plus(by, value)
